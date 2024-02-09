@@ -1,0 +1,132 @@
+@media(max-width:1199px) {
+    .banner-wrapper h1 {
+        font-size: 4.34rem;
+    }
+
+    .service-wrapper img {
+        max-width: 80px;
+        margin-right: .56rem;
+    }
+
+    .service-wrapper .card {
+        margin: auto;
+        max-width: 100%;
+        padding: 1.1rem 0;
+    }
+
+    .service-wrapper h3 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:991px) {
+    section {
+        padding: 6rem 0;
+    }
+
+    /* header */
+    .header-wrapper .navbar-brand img {
+        max-width: 85px;
+        height: auto;
+    }
+
+    .header-wrapper .header-scrolled {
+        height: auto;
+    }
+
+    .header-wrapper .menu-navbar-nav {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .header-wrapper .nav-item .nav-link {
+        margin-top: 15px;
+    }
+
+     /* carousel media */
+     .testimonial-wrapper .carousel-caption p {
+        padding: 0;
+    }
+
+     /* footer section media */
+     .footer .footer-social a i{
+        padding: 0 0.75rem;
+    }
+}
+
+@media(max-width:767px) {
+    .banner-wrapper h1 {
+        font-size: 3.574rem;
+        line-height: 3.67rem;
+    }
+
+    .service-wrapper img {
+        max-width: 95px;
+    }
+    .service-wrapper h2{
+        line-height: 2.765rem;
+    }
+    .service-wrapper p {
+        text-align: justify;
+    }
+
+    .service-wrapper .card {
+        margin: auto;
+    }
+
+    /* carousel media */
+    .testimonial-wrapper .carousel-item {
+        padding: 11rem 3.125rem;
+    }
+    .testimonial-wrapper h2{
+        line-height: 2.765rem;
+    }
+}
+
+@media(max-width:410px) {
+
+    .banner-wrapper h1 {
+        font-size: 2.665rem;
+        line-height: 1.12;
+    }
+
+    .banner-wrapper p {
+        font-size: .9475rem;
+    }
+
+    .banner-wrapper .btn-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-wrapper h4 {
+        font-size: 1.567rem;
+    }
+
+    .about-wrapper p {
+        font-size: .9375rem;
+    }
+}
+
+@media(max-width:340px) {
+    .service-wrapper img {
+        max-width: 70px;
+    }
+
+    .service-wrapper h3 {
+        font-size: 1.7687rem;
+    }
+
+    .service-wrapper .card .card-body p {
+        font-size: .9375rem;
+    }
+     /* carousel media */
+     .testimonial-wrapper .carousel-item {
+        padding: 13rem 3.125rem;
+    }
+    .testimonial-wrapper .carousel-caption p {
+        font-size: .9375rem;
+    }
+}
