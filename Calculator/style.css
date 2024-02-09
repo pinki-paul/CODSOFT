@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #111111d2;
+}
+.container h1{
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 2.242rem;
+    font-weight: 600;
+    color:#fff;
+    padding-bottom: 20px;
+    letter-spacing: 2.4px;
+}
+.container .calculator {
+    background-color: #1f1f20;
+    padding: 25px;
+    border-radius: 7px;
+}
+
+.container .calculator input,
+.container .calculator button {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 58px;
+    border-radius: 50%;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    background: rgb(34, 32, 32);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    transition: all .3s ease-out;
+}
+
+.container .calculator button:hover {
+    transform: scale(0.898);
+}
+
+.container .calculator .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 18px 0;
+}
+
+.container .calculator .display input {
+    text-align: right;
+    flex: 1;
+    border-radius: 0;
+    font-size: 44px;
+    box-shadow: none;
+}
+
+.container .calculator .display input::placeholder {
+    color: #fff;
+}
+
+.container .calculator .operator {
+    color: #d6711f;
+}
+
+.container .calculator .operatorAC {
+    background-color: rgb(13, 59, 13);
+    color: #fff;
+}
+
+.container .calculator .equal {
+    color: #d6711f;
+    font-size: 1.6rem;
+}
+
+
+@media(max-width:450px){
+
+.container h1{
+    font-size: 30px;
+}
+.container .calculator input,
+.container .calculator button {
+   width: 40px;
+   height: 40px;
+   font-size: 22px;
+   box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.1);
+}
+.container .calculator input::placeholder{
+    font-size: 22px;
+}
+
+}
+
+@media(max-width:340px){
+    .container .calculator input,
+    .container .calculator button {
+       width: 31px;
+       height: 31px;
+       font-size: 18px;
+       box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.1);
+    }
+}
