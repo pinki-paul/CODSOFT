@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 3: Portfolio Website</title>
+
+  <!-- bootstrap 5 cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- header section -->
+  <header class="navigation-wrap">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">pinki paul</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fa-solid fa-bars-staggered navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- banner scetion -->
+  <section class="banner-wrapper" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 text-center text-lg-start mb-4 mb-lg-0 order-2 order-lg-1">
+          <div class="main-content">
+            <span class="pre-header mb-4 mb-lg-0">Frontend Developer</span>
+            <h1 class="heading">Hello, my name is <br class="d-lg-block d-none"> Pinki Paul</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit explicabo blanditiis <br
+                class="d-lg-block d-none">amet, adipisci quaerat at.</p>
+            <div class="buttons-group mt-4">
+              <button class="main-btn mb-3 mb-lg-0">Projects</button>
+              <button class="main-btn2 mb-3 mb-lg-0">Linkedin</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-7 mb-4 mb-lg-0 order-1 order-lg-2">
+          <img src="./images/banner.png" alt="banner" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section class="about_wrapper" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <img src="./images/about.png" alt="about-img" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0 ps-lg-5">
+          <div class="main-content">
+            <h2>About me</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo ratione vero maiores optio alias
+              voluptatibus.
+            </p>
+            <button class="main-btn">Resume</button>
+          </div>
+
+          <div class="pt-4">
+            <ul class="nav nav-pills justify-content-lg-between justify-content-center mb-3" id="pills-tab"
+              role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill"
+                  type="button" role="tab" aria-controls="pills-skill" aria-selected="true">Main Skills</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-Award-tab" data-bs-toggle="pill" data-bs-target="#pills-Award"
+                  type="button" role="tab" aria-controls="pills-Award" aria-selected="false">Awards</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education"
+                  aria-selected="false">Education</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience"
+                  aria-selected="false">Experience</button>
+              </li>
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab">
+                <div class="single-progress">
+                  <h6>Designing</h6>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span class="label">85%</span>
+                </div>
+                <div class="single-progress">
+                  <h6>Development</h6>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span class="label">70%</span>
+                </div>
+                <div class="single-progress">
+                  <h6>Marketing</h6>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span class="label">65%</span>
+                </div>
+                <div class="single-progress">
+                  <h6>Management</h6>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span class="label">75%</span>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="pills-Award" role="tabpanel" aria-labelledby="pills-Award-tab">
+                <ul class="text-start ps-0">
+                  <li>
+                    <a href="#">Awwards.com <span>- Winner</span></a> 2019-2020
+                  </li>
+                  <li>
+                    <a href="#">CSS Designing Awards<span>- Winner</span></a> 2018-2019
+                  </li>
+                  <li>
+                    <a href="#">Design Nominees <span>- Site of the day</span></a> 2019-2020
+                  </li>
+                  <li>
+                    <a href="#">Awwards.com <span>- Winner</span></a> 2019-2020
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+                <ul class="text-start ps-0">
+                  <li>
+                    <a href="#">BSC In CSE<span> XYZ University, Amsterdam</span></a> 2010
+                  </li>
+                  <li>
+                    <a href="#">Diploma In Computer Science<span> ABC University, Boston
+                        London</span></a> 2009
+                  </li>
+                  <li>
+                    <a href="#">Graphic Design<span>ABC University, Boston London </span></a> 2009
+                  </li>
+                  <li>
+                    <a href="#">Graphic Design<span>ABC University, Boston London </span></a> 2009
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab">
+                <ul class="text-start ps-0">
+                  <li>
+                    <a href="#">Sr. Front-end Engineer<span> Google</span></a> 2018 - Current
+                  </li>
+                  <li>
+                    <a href="#">Jr. Front-end Engineer<span> Amazon</span></a> 2015 - 2017
+                  </li>
+                  <li>
+                    <a href="#">Software Engineer<span> Alibaba</span></a> 2013 - 2014
+                  </li>
+                  <li>
+                    <a href="#">Software Engineer<span> Alibaba</span></a> 2013 - 2014
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- projects section -->
+
+  <section class="project-wrapper" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center mb-4">
+          <h2>My projects</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo ratione vero maiores optio alias
+            voluptatibus.
+          </p>
+        </div>
+      </div>
+
+      <div class="row projectRow">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card p-0">
+            <span style="background-image: url('./images/App-Landing-Page.png');"></span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card p-0">
+            <span style="background-image: url('./images/Christmas-Landing-Page.png');"></span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card p-0">
+            <span style="background-image: url('./images/Ecommerce-Jewellery-Website.png');"></span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card p-0">
+            <span style="background-image: url('./images/E-Commerce-Website-Using-Bootstap-5.png');"></span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card p-0">
+            <span style="background-image: url('./images/Foodies.png');"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- contact section -->
+  <section id="contact" class="footer_wrapper">
+    <div class="container footer">
+      <div class="row align-items-center">
+        <div class="col-sm-12 text-center mb-4">
+          <h2>Contact me</h2>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-7 col-md-7 col-12 text-center">
+          <div class="form-group">
+           <label for="name">Name</label>
+           <input type="text" name="name" id="name">
+
+           <label for="email">Email</label>
+           <input type="email" name="email" id="email">
+
+           <label for="message">Message</label>
+           <textarea name="message" id="message"></textarea>
+
+          <div class="buttons">
+            <button class="main-btn">Submit</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+
+  <div class="container-fluid footer-social">
+    <div class="row align-items-center mb-0">
+      <div class="col-12 text-center mt-5">
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- bootstrap 5 cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <!-- custom js -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

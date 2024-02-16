@@ -1,0 +1,136 @@
+@media(max-width:991px) {
+    /* navbar */
+
+
+    .navaigation-wrap .navbar-collapse {
+        margin-top: -2px;
+    }
+
+    header .menu-navbar-nav {
+        text-align: center;
+        background-color: var(--white-color);
+        box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+    }
+
+    header .navbar-brand {
+        text-align: center;
+        margin-left: -5px;
+    }
+
+    header .mav-item .nav-link {
+        margin-top: 15px;
+    }
+
+    .banner-wrapper img {
+        margin-top: 0;
+
+    }
+
+    .banner-wrapper .main-content {
+        margin-top: 0;
+        padding-top: 77px;
+    }
+
+    /* about */
+    .about-wrapper {
+        padding-top: 0;
+    }
+
+    .about_wrapper ul.nav-pills {
+        width: 61%;
+        margin: auto;
+    }
+
+    /* portfolio media */
+    .project-wrapper .card {
+        min-height: 400px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner-wrapper .main-content h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    /* about */
+    .about-wrapper .main-content {
+        margin-top: 1rem;
+    }
+
+    .about-wrapper h2 {
+        font-size: 40px;
+    }
+
+    .about-wrapper .main-content {
+        margin-top: 1rem;
+    }
+
+    /* about media */
+    .about_wrapper ul.nav-pills {
+        width: 100%;
+        margin: auto;
+        border: 0;
+    }
+
+    /* about media */
+    .about_wrapper ul li .nav-link {
+        font-size: 13px;
+    }
+
+    /* portfolio media */
+    .project-wrapper .card {
+        min-height: 500px;
+    }
+
+    /* footer */
+    .footer_wrapper .form-group input,
+    .footer_wrapper .form-group textarea {
+        width: 85%;
+    }
+}
+
+@media(max-width:547px) {
+
+    .banner-wrapper h1 {
+        font-size: 45px;
+        line-height: 47px;
+    }
+
+    /* about */
+    .about-wrapper .main-content {
+        margin-top: 1rem;
+    }
+
+    /* footer */
+    .footer_wrapper .form-group input,
+    .footer_wrapper .form-group textarea {
+       width: 100%;
+    }
+}
+
+@media (max-width:430px) {
+    .banner-wrapper .main-content h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .banner-wrapper .main-content p {
+        font-size: 14px;
+    }
+
+    .about-wrapper h2 {
+        font-size: 35px;
+    }
+    /* footer */
+    .footer_wrapper .form-group input,
+    .footer_wrapper .form-group textarea {
+        width: 100%;
+    }
+}
+
+@media(max-width:285px) {
+    /* .main-btn{
+        margin-bottom: 1rem;
+    } */
+}
